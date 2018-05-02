@@ -9,13 +9,11 @@
 // Then add the GreenRaceCarCS Prefab and the MobileCarButtonSetup Prefab (as a Child object fo the GreenRaceCarCS) to Scene
 // The GreenRaceCarCS needs the MobileCarButtonSetup GUI Textures, called RightPedal, GasPedal and more...
 // Add a Plane below the GreenRaceCarCS, put some obstacles like ramps and others and test the game example
+// I only have erased the part to enter the mobile inputs and add a text for show the control keys
 // This code above called CarControlCS.cs already is inside of the GreenRaceCarCS, dont put the code again.
 //                            | | |
 //                            v v v
 
-//2016 Spyblood Productions
-//Use for non-commerical games only. do not sell comercially
-//without permission first
 
 using UnityEngine;
 using System.Collections;
@@ -385,5 +383,7 @@ public class CarControlCS : MonoBehaviour {
 			GUI.Box(new Rect(10,70,70,30),"Gear: " + (gear+1));
 		if (reversing)//if the car is going backwards display the gear as R
 			GUI.Box(new Rect(10,70,70,30),"Gear: R");
+
+		GUI.Box(new Rect(10,220,280,30),"Controls: Arrows Keys and gears change auto" );
 	}
 }
