@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 3D model to use togheter: https://www.4shared.com/file/aPdEsn3tee/Scaceship.html?
+
 public class SpaceShip3D : MonoBehaviour 
 {
 	public float torque = 10f;
