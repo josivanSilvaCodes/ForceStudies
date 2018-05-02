@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// spite/image to use togheter: https://www.4shared.com/photo/pkoRJskOfi/ship.html?
+// I recommend to scale it to x = 0.3, y = 0.3 and z = 0.3 (or others scale values you wish)
+
 public class SpaceShip : MonoBehaviour 
 {
 	public float torque = 10f;
