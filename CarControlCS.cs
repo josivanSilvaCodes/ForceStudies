@@ -10,6 +10,12 @@
 // The GreenRaceCarCS needs the MobileCarButtonSetup GUI Textures, called RightPedal, GasPedal and more...
 // Add a Plane below the GreenRaceCarCS, put some obstacles like ramps and others and test the game example
 // I only have erased the part to enter the mobile inputs and add a text for show the control keys
+// The full library with this code edited and a scene added is at https://www.4shared.com/rar/fbZ-5uTngm/SBPVP_v10.html
+// The new scene of test is called scene1
+// To use it with you own game, put the SBPVP_v10 inside your project and put GreenRaceCarCS in your scene with a plane/terrain
+// TO USE THIS LIBRARY REQUEST PERMISSION TO 2016 Spyblood Productions
+// DEmosntrative vídeo of the Library at: https://www.youtube.com/watch?v=I_H4xEhjS1k
+// The original autor wrote a FreeCarSet(README) file inside the folder SBPVP_v10 (read it to details)
 // This code above called CarControlCS.cs already is inside of the GreenRaceCarCS, dont put the code again.
 //                            | | |
 //                            v v v
@@ -17,8 +23,6 @@
 
 using UnityEngine;
 using System.Collections;
-
-
 
 public enum DriveType
 {
