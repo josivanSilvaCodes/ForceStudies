@@ -13,9 +13,13 @@
 //                            | | |
 //                            v v v
 
+//2016 Spyblood Productions
+//Use for non-commerical games only. do not sell comercially
+//without permission first
 
 using UnityEngine;
 using System.Collections;
+
 
 
 public enum DriveType
@@ -50,10 +54,10 @@ public class CarControlCS : MonoBehaviour {
 	public Transform[] extraWheelObjects;
 	public DriveType DriveTrain = DriveType.RWD;
 	public Vector3 centerOfGravity;//car's center of mass offset
-	public GUITexture gasPedal;
-	public GUITexture brakePedal;
-	public GUITexture leftPedal;
-	public GUITexture rightPedal;
+	//public GUITexture gasPedal;
+	//public GUITexture brakePedal;
+	//public GUITexture leftPedal;
+	//public GUITexture rightPedal;
 	public float maxTorque = 1000f;//car's acceleration value
 	public float maxReverseSpeed = 50f;//top speed for the reverse gear
 	public float handBrakeTorque = 500f;//hand brake value
@@ -71,10 +75,10 @@ public class CarControlCS : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//find all the GUITextures from the scene and assign them
-		gasPedal = GameObject.Find("GasPedal").GetComponent<GUITexture>();
-		brakePedal = GameObject.Find("BrakePedal").GetComponent<GUITexture>();
-		leftPedal = GameObject.Find("LeftPedal").GetComponent<GUITexture>();
-		rightPedal = GameObject.Find("RightPedal").GetComponent<GUITexture>();
+		//gasPedal = GameObject.Find("GasPedal").GetComponent<GUITexture>();
+		//brakePedal = GameObject.Find("BrakePedal").GetComponent<GUITexture>();
+		//leftPedal = GameObject.Find("LeftPedal").GetComponent<GUITexture>();
+		//rightPedal = GameObject.Find("RightPedal").GetComponent<GUITexture>();
 		//Alter the center of mass for stability on your car
 		GetComponent<Rigidbody>().centerOfMass = centerOfGravity;
 	}
@@ -144,16 +148,16 @@ public class CarControlCS : MonoBehaviour {
 		//simple function that disables/enables GUI buttons when we need and dont need them.
 		if (mobileInput)
 		{
-			gasPedal.gameObject.SetActive(true);
-			leftPedal.gameObject.SetActive(true);
-			rightPedal.gameObject.SetActive(true);
-			brakePedal.gameObject.SetActive(true);
+			//gasPedal.gameObject.SetActive(true);
+			//leftPedal.gameObject.SetActive(true);
+			//rightPedal.gameObject.SetActive(true);
+			//brakePedal.gameObject.SetActive(true);
 		}
 		else{
-			gasPedal.gameObject.SetActive(false);
-			leftPedal.gameObject.SetActive(false);
-			rightPedal.gameObject.SetActive(false);
-			brakePedal.gameObject.SetActive(false);
+			//gasPedal.gameObject.SetActive(false);
+			//leftPedal.gameObject.SetActive(false);
+			//rightPedal.gameObject.SetActive(false);
+			//brakePedal.gameObject.SetActive(false);
 		}
 	}
 
@@ -177,7 +181,7 @@ public class CarControlCS : MonoBehaviour {
 				gasMultiplier = 0f;
 		}
 		foreach (Touch touch in Input.touches) {
-
+			/*
 			//if the gas button is pressed down, speed up the car.
 			if (touch.phase == TouchPhase.Stationary && gasPedal.HitTest(touch.position))
 			{
@@ -259,7 +263,7 @@ public class CarControlCS : MonoBehaviour {
 					reversing = false;
 				}
 			}
-
+			*/
 		}
 
 	}
