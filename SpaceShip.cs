@@ -5,6 +5,10 @@ using UnityEngine;
 // spite/image to use togheter: https://www.4shared.com/photo/pkoRJskOfi/ship.html?
 // I recommend to scale it to x = 0.3 and y = 0.3 (or others scale values you wish)
 
+// Video to reference of basic spaceship's physics (in english): https://www.youtube.com/watch?v=TG_KLJ49URM
+// Video to reference of basic spaceship's physics (in portuguese): https://www.youtube.com/watch?v=q49lLeKylQ4
+
+
 public class SpaceShip : MonoBehaviour 
 {
 	public float torque = 10f;
